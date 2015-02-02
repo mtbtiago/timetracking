@@ -4,9 +4,7 @@ class ProjectsController < ApplicationController
 	# if controller name == views folder name this is not necessary
 	def index
 		@projects = Project.last_created_projects(10)
-		if @projects.empty?
-			render "no_projects"
-		end
+		render "no_projects" while @projects.empty?
 		# 
 		# or
 		# 
