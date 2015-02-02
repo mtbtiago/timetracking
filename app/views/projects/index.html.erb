@@ -1,6 +1,7 @@
 <h1>Last 10 projects</h1>
 <ul>
 <% @projects.each do |p| %>
-<li> <%= "Name: #{p.name}. Desc: #{p.description}" %> </li>
-<% end %>
+<!-- <li><%= "Name: #{p.name}"%><%= (p.description) ? ". Desc: #{p.description}" : "" %></li> -->
+<li><%= "Name: #{p.name}"%><%= (p.description.present?) ? ". Desc: #{p.description}" : "" %></li>
+<%end%>
 </ul>

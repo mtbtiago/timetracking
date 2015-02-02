@@ -8,4 +8,10 @@ class Project < ActiveRecord::Base
 	def self.clean_old
 		where("created_at < ?",7.day.ago).destroy_all
 	end
+
+	def self.last_created_projects(q)
+		order(created_at: :desc).limit(q)
+		# is the same than ...
+		# limit(q).order(created_at: :desc)
+	end
 end
