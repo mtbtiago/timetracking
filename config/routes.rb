@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # to create a controller -> rails g controller site
   get '/' => 'site#home'
   get '/contact' => 'site#contact'
+  get '/projects' => 'projects#index'
 end
