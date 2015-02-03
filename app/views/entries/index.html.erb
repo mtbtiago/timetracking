@@ -1,0 +1,8 @@
+<h2>Entries for <%=@project.name%></h1>
+<ul>
+  <% if !@entries.empty? %>
+    <% @entries.each do |e| %>
+      <li><%= "Hours: #{e.hours} Minutes: #{e.minutes}"%></li>
+    <%end%>
+  <%end%>
+</ul>
