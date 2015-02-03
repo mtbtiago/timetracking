@@ -21,15 +21,4 @@ class ProjectsController < ApplicationController
 			render "no_projects_found"
 		end
 	end
-
-  def calc_total_hours(year, month)
-  	first_day = Date.new(year,month,1)
-  	last_day = Date.new(year,month,-1)
-  	entries_where = entries.where(date: first_day..last_day)
-  	minutes = entries_where.map(0) {|result,e|
-  		result += (e.hours * 60) + e.minutes
-  	}
-  	minutes / 60
-  end
-
 end

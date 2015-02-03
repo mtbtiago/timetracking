@@ -3,7 +3,7 @@ class EntriesController < ApplicationController
     begin
       @project = Project.find(params[:project_id])
       @entries = @project.entries.where("extract(month from date) = extract(month from current_date)")
-      @hours = @project.calc_total_hours(Date.new.year,Date.new.month)
+      @total_month_hours = @project.calc_total_hours(Date.today.year,Date.today.month)
     rescue
       render "no_projects_found"
     end
