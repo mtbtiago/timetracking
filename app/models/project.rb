@@ -1,4 +1,5 @@
 class Project < ActiveRecord::Base
+	has_many :entries
 	# for change table name (optional)
 	# set table_name = "projects"
 	def self.iron_find(n)

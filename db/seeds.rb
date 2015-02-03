@@ -8,3 +8,7 @@
 Project.create name: "Url shortener", description: "the ugly"
 Project.create name: "My eBay", description: "the good"
 Project.create name: "My amazon", description: "the bad"
+
+(33..127).each do |n|
+	Project.create(name: "Project #{n}", description: "Description #{n.chr}")
+end
