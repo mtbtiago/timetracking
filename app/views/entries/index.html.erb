@@ -2,7 +2,12 @@
 <% if !@entries.empty? %>
   <ul>
     <% @entries.each do |e| %>
-      <li><%= "Hours: #{e.hours} Minutes: #{e.minutes}"%></li>
+      <li>
+        <%= "Date: #{e.date}. Hours: #{e.hours} Minutes: #{e.minutes}" %>
+        <% if e.comments.present? %>
+        <pre><%= "Optional comment: #{e.comments}"%></pre>
+        <% end %>
+      </li>
     <%end%>
   </ul>
   <h3>Total month: <%=@total_month_hours%></h3>

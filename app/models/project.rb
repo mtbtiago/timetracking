@@ -23,9 +23,13 @@ class Project < ActiveRecord::Base
   	minutes = entries_where.reduce(0) {|result,e|
   		result += (e.hours * 60) + e.minutes
   	}
-  	hours = minutes / 60
-  	mins = minutes % 60
-  	"#{hours} hours and #{mins} minutes"
+  	hours = 0
+    until (0..60).member? minutes
+      hours -= 60 <=> minutes
+      minutes += 60 * (60 <=> minutes)
+    end
+    hours %= 24
+  	"#{hours} hours and #{minutes} minutes"
   end
 
 end
