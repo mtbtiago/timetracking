@@ -1,0 +1,18 @@
+<% if @project.errors.any? %>
+  <ul>
+    <% @project.errors.full_messages.each do |error_msg| %>
+    <li><%= error_msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for [@project] do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, size: 12 %>
+<br>
+<%= f.label :description %>
+<%= f.text_field :description, size: 24 %>
+<br>
+
+<%= f.submit 'Save' %>
+<% end %>

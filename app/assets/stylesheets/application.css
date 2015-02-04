@@ -14,9 +14,14 @@
  *= require_self
  */
 h1 {
-	color: yellow;
+	color: orange;
 }
 
 h2 {
 	color: blue;
+}
+
+.field_with_errors input {
+  color: yellow;
+  background-color: red;
 }
