@@ -4,6 +4,8 @@
     <% @entries.each do |e| %>
       <li>
         <%= link_to(e.display_text,project_entry_path(@project,e)) %>
+        <%= link_to("[edit]",edit_project_entry_path(@project,e), method: :get) %>
+        <%= link_to("[delete]",project_entry_path(@project,e), method: :delete, data: { confirm: 'Are you sure?' }) %>
         <% if e.comments.present? %>
         <pre><%= "Optional comment: #{e.comments}"%></pre>
         <% end %>
@@ -11,6 +13,6 @@
     <%end%>
   </ul>
   <h3>Total month: <%=@total_month_hours%></h3>
-  <h4><%= link_to("New entry",new_project_entry_path) %></h4>
-  <h4><%= link_to("All projects",projects_path) %></h4>
 <%end%>
+<h4><%= link_to("New entry",new_project_entry_path) %></h4>
+<h4><%= link_to("All projects",projects_path) %></h4>

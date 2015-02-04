@@ -25,3 +25,11 @@ h2 {
   color: yellow;
   background-color: red;
 }
+
+.notice {
+  color: green;
+}
+
+.error {
+  color: red;
+}

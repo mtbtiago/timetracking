@@ -20,7 +20,9 @@ class EntriesController < ApplicationController
 
     if @entry.save
       redirect_to(action: 'index')
+      flash[:notice] = "Entry created sccessfully"
     else
+      flash[:error] = "Please, check errors"
       render('new')
       # render "your_crap"
     end
