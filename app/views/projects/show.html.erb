@@ -1,2 +1,3 @@
 <h1>A single project</h1>
 <%= "Name: #{@project.name}"%><%= (@project.description.present?) ? ". Desc: #{@project.description}" : "" %>
+<h2><%= link_to("All projects",projects_path) %></h2>

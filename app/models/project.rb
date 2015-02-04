@@ -13,7 +13,7 @@ class Project < ActiveRecord::Base
   end
 
   def full_name
-    "#{self.id.to_s}. #{self.name}" + (self.description.present? ? " AKA \"#{self.description}\"" : "")
+    "#{self.id.to_s}. #{self.name}" + (self.description.present? ? " a.k.a. \"#{self.description}\"" : "")
   end
 
   def self.clean_old

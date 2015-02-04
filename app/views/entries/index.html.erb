@@ -1,4 +1,4 @@
-<h2>Entries for <%=@project.full_name%></h1>
+<h2>Entries for <%=link_to(@project.full_name,project_path(@project))%></h1>
 <% if !@entries.empty? %>
   <ul>
     <% @entries.each do |e| %>
@@ -11,4 +11,6 @@
     <%end%>
   </ul>
   <h3>Total month: <%=@total_month_hours%></h3>
+  <h4><%= link_to("New entry",new_project_entry_path) %></h4>
+  <h4><%= link_to("All projects",projects_path) %></h4>
 <%end%>
