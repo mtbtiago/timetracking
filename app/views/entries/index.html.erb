@@ -14,5 +14,7 @@
   </ul>
   <h3>Total month: <%=@total_month_hours%></h3>
 <%end%>
-<h4><%= link_to("New entry",new_project_entry_path) %></h4>
-<h4><%= link_to("All projects",projects_path) %></h4>
+<h4>
+  <div class="new_item button_actions"><%= link_to("New entry",new_project_entry_path) %></div>
+  <div class="all_items button_actions"><%= link_to("All projects",projects_path) %></div>
+</h4>

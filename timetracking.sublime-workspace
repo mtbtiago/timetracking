@@ -1,0 +1,1146 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"lin",
+				"link_to"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"error",
+				"error_msg"
+			],
+			[
+				"entr",
+				"entry_params"
+			],
+			[
+				"ent",
+				"entry"
+			],
+			[
+				"p",
+				"project"
+			],
+			[
+				"por",
+				"project_id"
+			],
+			[
+				"en",
+				"entries"
+			],
+			[
+				"url",
+				"url_id"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"las",
+				"last_day"
+			],
+			[
+				"fir",
+				"first_day"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
+				"min",
+				"minutes"
+			],
+			[
+				"un",
+				"unless	unless … end"
+			],
+			[
+				"in",
+				"integer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/controllers/entries_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1764,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 1135 files for \"[edit]\"\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/index.html.erb:\n    5        <li>\n    6          <%= link_to(e.display_text,project_entry_path(@project,e)) %>\n    7:         <%= link_to(\"[edit]\",edit_project_entry_path(@project,e), method: :get) %>\n    8          <%= link_to(\"[delete]\",project_entry_path(@project,e), method: :delete, data: { confirm: 'Are you sure?' }) %>\n    9          <% if e.comments.present? %>\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/index.html.erb:\n    5        <li>\n    6          <%= link_to(e.display_text,project_entry_path(@project,e)) %>\n    7:         <%= link_to(\"[edit]\",edit_project_entry_path(@project,e), method: :get) %>\n    8          <%= link_to(\"[delete]\",project_entry_path(@project,e), method: :delete, data: { confirm: 'Are you sure?' }) %>\n    9          <% if e.comments.present? %>\n\n~/dev/ironhack/rails/timetracking/log/development.log:\n    <binary>\n\n3 matches across 3 files\n\n\nSearching 1135 files for \"display_text\"\n\n/home/tiago/dev/ironhack/rails/timetracking/app/models/entry.rb:\n   12    end\n   13  \n   14:   def display_text\n   15      \"ID: #{self.id}. Date: #{self.date}. Hours: #{self.hours} Minutes: #{self.minutes}\"\n   16    end\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/index.html.erb:\n    4      <% @entries.each do |e| %>\n    5        <li>\n    6:         <%= link_to(e.display_text,project_entry_path(@project,e)) %>\n    7          <%= link_to(\"[edit]\",edit_project_entry_path(@project,e), method: :get) %>\n    8          <%= link_to(\"[delete]\",project_entry_path(@project,e), method: :delete, data: { confirm: 'Are you sure?' }) %>\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/show.html.erb:\n    1  <h1>A single entry</h1>\n    2  <h2><%=\"Project: #{@project.full_name}\"%></h2>\n    3: <%= @entry.display_text %>\n    4  <h2><%= link_to(\"Edit this entry\",edit_project_entry_path(@project,@entry), method: :get) %></h2>\n    5  <h2><%= link_to(\"Delete this entry\",project_entry_path(@project,@entry), method: :delete, data: { confirm: 'Are you sure?' }) %></h2>\n\n/home/tiago/dev/ironhack/rails/timetracking/app/models/entry.rb:\n   12    end\n   13  \n   14:   def display_text\n   15      \"ID: #{self.id}. Date: #{self.date}. Hours: #{self.hours} Minutes: #{self.minutes}\"\n   16    end\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/index.html.erb:\n    4      <% @entries.each do |e| %>\n    5        <li>\n    6:         <%= link_to(e.display_text,project_entry_path(@project,e)) %>\n    7          <%= link_to(\"[edit]\",edit_project_entry_path(@project,e), method: :get) %>\n    8          <%= link_to(\"[delete]\",project_entry_path(@project,e), method: :delete, data: { confirm: 'Are you sure?' }) %>\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/show.html.erb:\n    1  <h1>A single entry</h1>\n    2  <h2><%=\"Project: #{@project.full_name}\"%></h2>\n    3: <%= @entry.display_text %>\n    4  <h2><%= link_to(\"Edit this entry\",edit_project_entry_path(@project,@entry), method: :get) %></h2>\n    5  <h2><%= link_to(\"Delete this entry\",project_entry_path(@project,@entry), method: :delete, data: { confirm: 'Are you sure?' }) %></h2>\n\n6 matches across 6 files\n\n\nSearching 1136 files for \"all pro\"\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/index.html.erb:\n   18    <span>\n   19      <div class=\"new_item button_actions\"><%= link_to(\"New entry\",new_project_entry_path) %></div>\n   20:     <div class=\"all_items button_actions\"><%= link_to(\"All projects\",projects_path) %></div>\n   21    </span>\n   22  </h4>\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/show.html.erb:\n    5  <%= link_to(\"[delete]\",project_entry_path(@project,@entry), method: :delete, data: { confirm: 'Are you sure?' }) %>\n    6  <h2><%= link_to(\"This project entries\",project_entries_path(@project)) %></h2>\n    7: <h2><%= link_to(\"All projects\",projects_path) %></h2>\n    8  \n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/index.html.erb:\n   18    <span>\n   19      <div class=\"new_item button_actions\"><%= link_to(\"New entry\",new_project_entry_path) %></div>\n   20:     <div class=\"all_items button_actions\"><%= link_to(\"All projects\",projects_path) %></div>\n   21    </span>\n   22  </h4>\n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/show.html.erb:\n    5  <%= link_to(\"[delete]\",project_entry_path(@project,@entry), method: :delete, data: { confirm: 'Are you sure?' }) %>\n    6  <h2><%= link_to(\"This project entries\",project_entries_path(@project)) %></h2>\n    7: <h2><%= link_to(\"All projects\",projects_path) %></h2>\n    8  \n\n/home/tiago/dev/ironhack/rails/timetracking/app/views/projects/show.html.erb:\n    1  <h1>A single project</h1>\n    2  <%=@project.full_name%>\n    3: <h2><%= link_to(\"All projects\",projects_path) %></h2>\n    4  \n\n~/dev/ironhack/rails/timetracking/log/development.log:\n    <binary>\n\n~/dev/ironhack/rails/timetracking/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af:\n    <binary>\n\n~/dev/ironhack/rails/timetracking/tmp/cache/assets/development/sprockets/33175b5668e9fc3aef44228a6d4ca8b5:\n    <binary>\n\n~/dev/ironhack/rails/timetracking/tmp/cache/assets/development/sprockets/5e983a96e659f04d667b688c005272a5:\n    <binary>\n\n~/dev/ironhack/rails/timetracking/tmp/cache/assets/development/sprockets/7447cf0576716496f88eb363ca90c5a2:\n    <binary>\n\n~/dev/ironhack/rails/timetracking/tmp/cache/assets/development/sprockets/cffd775d018f68ce5dba1ee0d951a994:\n    <binary>\n\n~/dev/ironhack/rails/url_shortener/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af:\n    <binary>\n\n~/dev/ironhack/rails/url_shortener/tmp/cache/assets/development/sprockets/33175b5668e9fc3aef44228a6d4ca8b5:\n    <binary>\n\n~/dev/ironhack/rails/url_shortener/tmp/cache/assets/development/sprockets/5e983a96e659f04d667b688c005272a5:\n    <binary>\n\n~/dev/ironhack/rails/url_shortener/tmp/cache/assets/development/sprockets/7447cf0576716496f88eb363ca90c5a2:\n    <binary>\n\n~/dev/ironhack/rails/url_shortener/tmp/cache/assets/development/sprockets/cffd775d018f68ce5dba1ee0d951a994:\n    <binary>\n\n/home/tiago/dev/ironhack/week03/myday3/javascript/lib/chai.js:\n 3461          // Use `__proto__` if available\n 3462          if (hasProtoSupport) {\n 3463:           // Inherit all properties from the object by replacing the `Function` prototype\n 3464            var prototype = assert.__proto__ = Object.create(this);\n 3465            // Restore the `call` and `apply` methods from `Function`\n ....\n 3467            prototype.apply = apply;\n 3468          }\n 3469:         // Otherwise, redefine all properties (slow!)\n 3470          else {\n 3471            var asserterNames = Object.getOwnPropertyNames(ctx);\n\n/home/tiago/dev/ironhack/week03/myday3/javascript/node_modules/jasmine-node/node_modules/.bin/r.js:\n 13610    //     }\n 13611    //\n 13612:   // All properties except for `generatedLine` and `generatedColumn` can be\n 13613    // `null`.\n 13614    //\n\n/home/tiago/dev/ironhack/week03/myday3/javascript/node_modules/jasmine-node/node_modules/jasmine-reporters/ext/env.rhino.1.2.js:\n  802   * The javascript urlsplit returns a normal object with the following\n  803   * properties: scheme, netloc, hostname, port, path, query, fragment.\n  804:  * All properties are read-write.\n  805   *\n  806   * In python, the resulting object is not a dict, but a specialized,\n\n/home/tiago/dev/ironhack/week03/myday3/javascript/node_modules/jasmine-node/node_modules/requirejs/bin/r.js:\n 13610    //     }\n 13611    //\n 13612:   // All properties except for `generatedLine` and `generatedColumn` can be\n 13613    // `null`.\n 13614    //\n\n/home/tiago/dev/ironhack/week03/myday4/javascript/lib/chai.js:\n 3461          // Use `__proto__` if available\n 3462          if (hasProtoSupport) {\n 3463:           // Inherit all properties from the object by replacing the `Function` prototype\n 3464            var prototype = assert.__proto__ = Object.create(this);\n 3465            // Restore the `call` and `apply` methods from `Function`\n ....\n 3467            prototype.apply = apply;\n 3468          }\n 3469:         // Otherwise, redefine all properties (slow!)\n 3470          else {\n 3471            var asserterNames = Object.getOwnPropertyNames(ctx);\n\n/home/tiago/dev/ironhack/week03/myday5/javascript/lib/chai.js:\n 3461          // Use `__proto__` if available\n 3462          if (hasProtoSupport) {\n 3463:           // Inherit all properties from the object by replacing the `Function` prototype\n 3464            var prototype = assert.__proto__ = Object.create(this);\n 3465            // Restore the `call` and `apply` methods from `Function`\n ....\n 3467            prototype.apply = apply;\n 3468          }\n 3469:         // Otherwise, redefine all properties (slow!)\n 3470          else {\n 3471            var asserterNames = Object.getOwnPropertyNames(ctx);\n\n31 matches across 22 files\n",
+			"settings":
+			{
+				"buffer_size": 8940,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "app/views/entries/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 824,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/entries/edit.html.erb",
+			"settings":
+			{
+				"buffer_size": 647,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/entries/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 646,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 463,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/application.css",
+			"settings":
+			{
+				"buffer_size": 958,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/seeds.rb",
+			"settings":
+			{
+				"buffer_size": 619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/entries/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 502,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/projects_controller.rb",
+			"settings":
+			{
+				"buffer_size": 974,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/projects/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/entry.rb",
+			"settings":
+			{
+				"buffer_size": 420,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 33.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: end (ERB)"
+			],
+			[
+				"snip",
+				"Snippet: Comment"
+			],
+			[
+				"set s ry",
+				"Set Syntax: Ruby"
+			],
+			[
+				"q",
+				"ChangeQuotes"
+			],
+			[
+				"instp",
+				"Package Control: Install Package"
+			],
+			[
+				"quo",
+				"ChangeQuotes"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"prety",
+				"HTMLPrettify"
+			],
+			[
+				"set sy j",
+				"Set Syntax: JSON"
+			],
+			[
+				"sets h",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syh",
+				"Set Syntax: HTML"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insp",
+				"Package Control: Install Package"
+			],
+			[
+				"set sy r",
+				"Set Syntax: Ruby"
+			],
+			[
+				"set s ru",
+				"Set Syntax: Ruby"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/tiago/dev/ironhack/rails/timetracking",
+		"/home/tiago/dev/ironhack/rails/timetracking/app",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/controllers",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/models",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/entries",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/layouts",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/projects"
+	],
+	"file_history":
+	[
+		"/home/tiago/dev/ironhack/rails/timetracking/app/controllers/projects_controller.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/db/test.sqlite3",
+		"/home/tiago/dev/ironhack/rails/timetracking/tmp/cache/assets/development/sass/6d2714f51d7bec5229f74a21c2e853987ef4ba0d/entries.scssc",
+		"/home/tiago/dev/ironhack/rails/timetracking/config/initializers/filter_parameter_logging.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/db/migrate/20150202112159_add_column.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/db/migrate/20150204162041_entry_date_default_today.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/db/development.sqlite3",
+		"/home/tiago/dev/ironhack/rails/timetracking/config/database.yml",
+		"/home/tiago/dev/ironhack/rails/timetracking/db/migrate/20150202105615_create_projects.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/config/initializers/mime_types.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/db/seeds.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/.gitignore",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/layouts/application.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/projects/index.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/projects/new.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/projects/show.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/show.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/helpers/site_helper.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/config/environment.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/config/environments/test.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/config/routes.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/README.md",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/edit.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/index.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/models/project.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/models/entry.rb",
+		"/home/tiago/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/tiago/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/controllers/entries_controller.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/public/404.html",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/site/home.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/projects/no_projects_found.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/no_projects_found.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/projects/no_projects.html.erb",
+		"/home/tiago/.config/sublime-text-2/Packages/Rails/for-loop-erb.sublime-snippet",
+		"/home/tiago/.config/sublime-text-3/Packages/User/rails_erb_print_tag.sublime-snippet",
+		"/home/tiago/.config/sublime-text-3/Packages/User/rails_erb_tag.sublime-snippet",
+		"/home/tiago/.config/sublime-text-3/Packages/User/percnet_equal.sublime-snippet",
+		"/home/tiago/.config/sublime-text-3/Packages/User/percent_not_equal.sublime-snippet",
+		"/home/tiago/.config/sublime-text-3/Packages/Emmet Css Snippets/CSS/Color/op.sublime-snippet",
+		"/home/tiago/.config/sublime-text-3/Packages/Emmet Css Snippets/CSS/Text/wowu.sublime-snippet",
+		"/home/tiago/dev/ironhack/rails/timetracking/db/production.sqlite3",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/site/contact.html.erb",
+		"/home/tiago/dev/ironhack/rails/timetracking/config.ru",
+		"/home/tiago/.config/sublime-text-3/Packages/User/Package Control.merged-ca-bundle",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/assets/stylesheets/application.css",
+		"/home/tiago/dev/ironhack/rails/timetracking/config/initializers/inflections.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/your_crap.html.erb",
+		"/home/tiago/dev/ironhack/week02/active_record/oc4.rb",
+		"/home/tiago/dev/ironhack/week02/active_record/sl12.rb",
+		"/home/tiago/dev/ironhack/week02/active_record/students.rb",
+		"/home/tiago/dev/ironhack/week02/active_record/ironhackmdb.rb",
+		"/home/tiago/dev/ironhack/week02/active_record/oc5.rb",
+		"/home/tiago/dev/ironhack/week02/active_record/sl11.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/app/assets/stylesheets/application.css",
+		"/home/tiago/dev/ironhack/rails/url_shortener/config.ru",
+		"/home/tiago/dev/ironhack/rails/url_shortener/config/initializers/inflections.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/app/views/url/index.html.erb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/app/controllers/url_controller.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/app/views/layouts/application.html.erb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/db/migrate/20150203144148_create_urls.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/db/seeds.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/config/initializers/session_store.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/config/initializers/cookies_serializer.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/bin/setup",
+		"/home/tiago/dev/ironhack/rails/url_shortener/test/fixtures/urls.yml",
+		"/home/tiago/dev/ironhack/rails/url_shortener/app/models/url.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/Gemfile",
+		"/home/tiago/dev/ironhack/rails/url_shortener/app/controllers/site_controller.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/app/assets/stylesheets/site.scss",
+		"/home/tiago/dev/ironhack/rails/url_shortener/app/assets/javascripts/site.coffee",
+		"/home/tiago/dev/ironhack/rails/url_shortener/test/controllers/site_controller_test.rb",
+		"/home/tiago/dev/ironhack/rails/url_shortener/config/environment.rb",
+		"/home/tiago/dev/ironhack/rails/timetracking/app/views/entries/no_entries.html.erb",
+		"/home/tiago/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/tiago/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/tiago/dev/ironhack/rails/timetracking/Rakefile",
+		"/home/tiago/dev/ironhack/rails/timetracking/README.rdoc",
+		"/home/tiago/dev/ironhack/rails/timetracking/config/routes_backup.rb",
+		"/home/tiago/.config/sublime-text-3/Packages/User/HTML (Rails).sublime-settings",
+		"/home/tiago/dev/ironhack/rails/timetracking/Gemfile",
+		"/home/tiago/dev/ironhack/rails/timetracking/db/migrate/20150203093055_create_entries.rb",
+		"/home/tiago/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/source/position.rb",
+		"/home/tiago/.config/google-chrome/Default/Extensions/bhlhnicpbhignbdhedgjhgdocnmhomnp/0.5.5_0/lib/jPicker/css/jPicker-1.1.6.min.css",
+		"/home/tiago/.config/sublime-text-3/Packages/User/Zeal.sublime-settings",
+		"/home/tiago/.config/sublime-text-3/Packages/Zeal/Zeal.sublime-settings",
+		"/home/tiago/dev/html/sample.html",
+		"/home/tiago/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/tiago/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/Default (Linux).sublime-keymap",
+		"/home/tiago/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"~/dev/ironhack/,<open files>",
+			"~/dev/ironhack/",
+			"~/dev/ironhack/week02"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h2",
+			"all pro",
+			"e",
+			"display_text",
+			"[edit]",
+			"entries for",
+			"e",
+			"edit_entry_params",
+			"new_entry_params",
+			"entry_params",
+			"update_attributes",
+			"delete",
+			"entry",
+			"edit_project_entry_path",
+			"e",
+			"h2",
+			"ctrl+p",
+			"h4",
+			"AKA",
+			"self",
+			"this",
+			"p",
+			"minutes",
+			"entry",
+			"entry_params",
+			"entry",
+			"h2",
+			"\n<",
+			"validates",
+			"show",
+			"project",
+			"length",
+			"long",
+			" @",
+			"pre",
+			"span",
+			"div",
+			"description",
+			"name",
+			"Project",
+			"timetracking",
+			"timetracking_development",
+			"<=>",
+			"entries",
+			"result",
+			"p",
+			"h1",
+			"projects",
+			"integer",
+			"t",
+			"date",
+			"ctrl+d\"",
+			"t",
+			"ctrl+d",
+			"ctrl+w",
+			"t",
+			"ctrl+u",
+			"Project",
+			"pg",
+			"db/",
+			"div",
+			"moves",
+			"Position",
+			"pieces",
+			"Position",
+			"definiti",
+			"Move",
+			"def",
+			"ield",
+			"4",
+			"sub",
+			"python"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/entries_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": null,
+							"translate_tabs_to_spaces": null
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8940,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										236,
+										242
+									],
+									[
+										670,
+										676
+									],
+									[
+										1139,
+										1151
+									],
+									[
+										1424,
+										1436
+									],
+									[
+										1869,
+										1881
+									],
+									[
+										2231,
+										2243
+									],
+									[
+										2516,
+										2528
+									],
+									[
+										2961,
+										2973
+									],
+									[
+										3548,
+										3555
+									],
+									[
+										3927,
+										3934
+									],
+									[
+										4234,
+										4241
+									],
+									[
+										4613,
+										4620
+									],
+									[
+										4825,
+										4832
+									],
+									[
+										6331,
+										6338
+									],
+									[
+										6651,
+										6658
+									],
+									[
+										6912,
+										6919
+									],
+									[
+										7311,
+										7318
+									],
+									[
+										7583,
+										7590
+									],
+									[
+										7865,
+										7872
+									],
+									[
+										8185,
+										8192
+									],
+									[
+										8477,
+										8484
+									],
+									[
+										8797,
+										8804
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								3932,
+								3932
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1406.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/entries/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								824,
+								824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/entries/edit.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/entries/new.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/layouts/application.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								420,
+								420
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/assets/stylesheets/application.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								874,
+								874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "db/seeds.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/entries/show.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							],
+							[
+								500,
+								500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/controllers/projects_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 974,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/projects/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/models/entry.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": null,
+							"translate_tabs_to_spaces": null
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "timetracking.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"contro",
+				"app/controllers/entries_controller.rb"
+			],
+			[
+				"contr",
+				"app/controllers/projects_controller.rb"
+			],
+			[
+				"css",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"entry",
+				"app/models/entry.rb"
+			],
+			[
+				"defau",
+				"db/migrate/20150204162041_entry_date_default_today.rb"
+			],
+			[
+				"migra",
+				"db/migrate/20150202112159_add_column.rb"
+			],
+			[
+				".erb",
+				"app/views/projects/index.html.erb"
+			],
+			[
+				"show",
+				"app/views/entries/show.html.erb"
+			],
+			[
+				"index",
+				"app/views/entries/index.html.erb"
+			],
+			[
+				"new.",
+				"app/views/entries/new.html.erb"
+			],
+			[
+				"erb",
+				"app/views/entries/edit.html.erb"
+			],
+			[
+				"html",
+				"app/views/entries/new.html.erb"
+			],
+			[
+				"entr",
+				"app/models/entry.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"new",
+				"app/views/entries/new.html.erb"
+			],
+			[
+				"ht",
+				"app/views/entries/new.html.erb"
+			],
+			[
+				"html.erb",
+				"app/views/entries/index.html.erb"
+			],
+			[
+				"proj",
+				"app/views/projects/index.html.erb"
+			],
+			[
+				"porj",
+				"app/models/project.rb"
+			],
+			[
+				"ent",
+				"app/models/entry.rb"
+			],
+			[
+				"inde",
+				"app/views/projects/index.html.erb"
+			],
+			[
+				"proje",
+				"app/controllers/projects_controller.rb"
+			],
+			[
+				"entries",
+				"app/controllers/entries_controller.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"urls",
+				"db/migrate/20150203144148_create_urls.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"pro",
+				"app/models/project.rb"
+			],
+			[
+				"project",
+				"app/controllers/projects_controller.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 1096.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -33,3 +33,14 @@ h2 {
 .error {
   color: red;
 }
+
+.button_actions {
+  display: inline;
+}
+.new_item {
+  color: green;
+}
+
+.all_items {
+  color: blue;
+}

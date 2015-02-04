@@ -39,8 +39,10 @@ class EntriesController < ApplicationController
     @entry.update_attributes(edit_entry_params)
 
     if @entry.save
+      flash[:notice] = "Data updated sccessfully"
       redirect_to(action: 'index')
     else
+      flash[:error] = "Please, check errors"
       render('edit')
     end
   end
