@@ -16,7 +16,7 @@ class EntriesController < ApplicationController
 
   def create
     @project = Project.find(params[:project_id])
-    @entry = @project.entries.new(entry_params)
+    @entry = @project.entries.new(new_entry_params)
 
     if @entry.save
       redirect_to(action: 'index')
@@ -26,19 +26,43 @@ class EntriesController < ApplicationController
     end
   end
 
+  def edit
+    @project = Project.find(params[:project_id])
+    @entry = @project.entries.find(params[:id])
+  end
+
+  def update
+    @project = Project.find(params[:project_id])
+    @entry = @project.entries.find(params[:id])
+    @entry.update_attributes(edit_entry_params)
+
+    if @entry.save
+      redirect_to(action: 'index')
+    else
+      render('edit')
+    end
+  end
+
+  def destroy
+    @project = Project.find(params[:project_id])
+    @entry = @project.entries.find(params[:id])
+    @entry.destroy
+    redirect_to(action: 'index')
+  end
+
+  def show
+    @project = Project.find(params[:project_id])
+    @entry = @project.entries.find(params[:id])
+  end
+
   private
 
-  def entry_params
+  def new_entry_params
     params.require(:entry).permit(:hours, :minutes, :date)
   end
-  # def show
-  #   # @project = Project.where("id = ?",params[:id]).first
-  #   begin
-  #     # @project = Project.find_by(params[:id]) # returns nil
-  #     @project = Project.find(params[:id]) # raises an exception
-  #   rescue
-  #     render "no_projects_found"
-  #   end
-  # end
+
+  def edit_entry_params
+    params.require(:entry).permit(:hours, :minutes, :date, :comments)
+  end
 
 end

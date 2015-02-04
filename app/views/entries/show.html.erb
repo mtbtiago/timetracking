@@ -1,0 +1,7 @@
+<h1>A single entry</h1>
+<h2><%="Project: #{@project.full_name}"%></h2>
+<%= @entry.display_text %>
+<h2><%= link_to("Edit this entry",edit_project_entry_path(@project,@entry), method :update) %></h2>
+<h2><%= link_to("Delete this entry",project_entry_path(@project,@entry), method: :delete, data: { confirm: 'Are you sure?' }) %></h2>
+<h2><%= link_to("This project entries",project_entries_path(@project)) %></h2>
+<h2><%= link_to("All projects",projects_path) %></h2>
