@@ -12,6 +12,10 @@ class Project < ActiveRecord::Base
     where("name = ?",n).first
   end
 
+  def full_name
+    "#{self.id.to_s}. #{self.name}" + (self.description.present? ? " AKA \"#{self.description}\"" : "")
+  end
+
   def self.clean_old
     where("created_at < ?",7.day.ago).destroy_all
   end
