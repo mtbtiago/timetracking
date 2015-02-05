@@ -1,3 +1,4 @@
 <h1>A single project</h1>
+<%= image_tag @project.logo.url(:medium) %>
 <%=@project.full_name%>
 <h2><%= link_to("All projects",projects_path) %></h2>

@@ -2,7 +2,14 @@
 <ul>
 <% @projects.each do |p| %>
 <!-- You don't need to use <a> -->
-  <li><%=link_to(p.full_name,project_entries_path(p))%></li>
+  <li>
+    <% if p.logo_file_name.present? %>
+      <%= image_tag p.logo.url(:thumb) %>
+    <% end %>
+    <%=link_to(p.full_name,project_entries_path(p))%>
+    <%= link_to("[edit]",edit_project_path(p), method: :get) %>
+    <%= link_to("[delete]",project_path(p), method: :delete, data: { confirm: 'Are you sure?' }) %>
+  </li>
 <%end%>
 </ul>
 

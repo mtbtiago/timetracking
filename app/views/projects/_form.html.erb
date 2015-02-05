@@ -1,12 +1,14 @@
-<%= form_for [@project] do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name, size: 12 %>
-<br>
-<%= f.label :description %>
-<%= f.text_field :description, size: 24 %>
-<br>
+<%= form_for @project, :html => { :multipart => true } do |f| %>
+  <%= f.label :logo %>
+  <%= f.file_field :logo %>
+  <%= f.label :name %>
+  <%= f.text_field :name, size: 12 %>
+  <br>
+  <%= f.label :description %>
+  <%= f.text_field :description, size: 24 %>
+  <br>
 
-<%= f.submit 'Save' %>
-<%= link_to("Cancel",projects_path) %>
+  <%= f.submit 'Save' %>
+  <%= link_to("Cancel",projects_path) %>
 
 <% end %>
