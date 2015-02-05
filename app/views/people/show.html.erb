@@ -1,0 +1,19 @@
+<h1>Person information</h1>
+<h2><%=@person.name%></h2>
+
+<h3>Assigned to projects</h3>
+
+<ul>
+<% Project.all.each do |project| %>
+  <li>
+    <%= "#{(project.people.include?(@person) ? "[X]" : "[ ]")} #{project.full_name}" %>
+  </li>
+<% end %>
+</ul>
+<hr>
+<ul>
+<% @available_projects.each do |k,v| %>
+  <li><%= "#{((v == 'X') ? '[X]' : '[ ]')}  #{@all_projects[k]}"%></li>
+<%end%>
+</ul>
+

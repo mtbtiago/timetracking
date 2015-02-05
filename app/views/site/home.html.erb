@@ -1,2 +1,13 @@
 <h1>Welcome to this timetracking tool</h1>
 <p>Ironhack powered</p>
+
+<h2>Last 10 projects</h2>
+
+<%= render 'shared/project_list' %>
+
+<h4>
+  <div class="new_item button_actions"><%= link_to("New project",new_project_path) %></div>
+  <div class="all_items button_actions"><%= link_to("All projects",projects_path) %></div>
+  <div class="all_items button_actions"><%= link_to("New person",new_person_path) %></div>
+  <div class="all_items button_actions"><%= link_to("All people",people_path) %></div>
+</h4>

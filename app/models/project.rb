@@ -1,8 +1,13 @@
 class Project < ActiveRecord::Base
   has_many :entries, :dependent => :delete_all
+
+  has_many :participations
+  has_many :people, through: :participations
+
   # attached related to gem paperclip
   has_attached_file :logo, styles: {:medium => "300x300>", :thumb => "100x100>"}
   validates_attachment_content_type :logo, :content_type => /\Aimage\/.*\Z/
+
   validates :name,
     presence: true,
     uniqueness: true,
@@ -44,5 +49,4 @@ class Project < ActiveRecord::Base
     hours %= 24
     "#{hours} hours and #{minutes} minutes"
   end
-
 end

@@ -18,5 +18,12 @@
 
 <%= yield %>
 
+<footer>
+<h4>
+  <div class="new_item button_actions"><%= link_to("Home",'/') %></div>
+  <div class="all_items button_actions"><%= link_to("All projects",projects_path) %></div>
+  <div class="all_items button_actions"><%= link_to("People",people_path) %></div>
+</h4>
+</footer>
 </body>
 </html>

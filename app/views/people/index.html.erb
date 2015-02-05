@@ -1,0 +1,12 @@
+<h1>People listing</h1>
+
+<ul>
+<% @people.each do |p| %>
+  <li>
+    <%=link_to(p.name,person_path(p))%>
+    <%= link_to("[edit]",edit_person_path(p), method: :get) %>
+    <%= link_to("[delete]",person_path(p), method: :delete, data: { confirm: 'Are you sure?' }) %>
+  </li>
+<%end%>
+</ul>
+

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :projects do
     resources :entries
   end
+  resources :people
 
   # get '/' => 'site#home'
   # get '/contact' => 'site#contact'

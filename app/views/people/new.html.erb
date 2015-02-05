@@ -1,0 +1,9 @@
+<% if @person.errors.any? %>
+  <ul>
+    <% @person.errors.full_messages.each do |error_msg| %>
+    <li><%= error_msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render 'form' %>
