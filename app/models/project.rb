@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  has_many :entries
+  has_many :entries, :dependent => :delete_all
   # attached related to gem paperclip
   has_attached_file :logo, styles: {:medium => "300x300>", :thumb => "100x100>"}
   validates_attachment_content_type :logo, :content_type => /\Aimage\/.*\Z/
