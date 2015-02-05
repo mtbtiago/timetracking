@@ -8,20 +8,4 @@
   </ul>
 <% end %>
 
-<%= form_for [@project, @entry] do |f| %>
-  <%= f.label :hours %>
-  <%= f.text_field :hours, size: 4 %>
-  <br>
-  <%= f.label :minutes %>
-  <%= f.text_field :minutes, size: 4 %>
-  <br>
-  <%= f.label :date %>
-  <%= f.text_field :date, size: 8 %>
-  <br>
-  <%= f.label :comments %>
-  <%= f.text_field :comments, size: 48 %>
-  <br>
-
-  <%= f.submit 'Save' %>
-  <%= link_to("Cancel",project_entries_path) %>
-<% end %>
+<%= render 'form' %>

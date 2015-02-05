@@ -1,0 +1,12 @@
+<%= form_for [@project] do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, size: 12 %>
+<br>
+<%= f.label :description %>
+<%= f.text_field :description, size: 24 %>
+<br>
+
+<%= f.submit 'Save' %>
+<%= link_to("Cancel",projects_path) %>
+
+<% end %>

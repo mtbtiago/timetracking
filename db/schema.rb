@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150204162041) do
+ActiveRecord::Schema.define(version: 20150203093055) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150204162041) do
     t.integer  "hours"
     t.integer  "minutes"
     t.text     "comments"
-    t.datetime "date",       default: '2015-02-04 00:00:00'
+    t.datetime "date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  has_many :entries
+  has_many :entries, :dependent => :delete_all
   validates :name,
     presence: true,
     uniqueness: true,

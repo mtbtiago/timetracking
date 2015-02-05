@@ -5,3 +5,8 @@
   <li><%=link_to(p.full_name,project_entries_path(p))%></li>
 <%end%>
 </ul>
+
+<h4>
+  <div class="new_item button_actions"><%= link_to("New project",new_project_path) %></div>
+  <div class="all_items button_actions"><%= link_to("All projects",projects_path) %></div>
+</h4>

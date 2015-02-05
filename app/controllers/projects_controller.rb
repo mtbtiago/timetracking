@@ -31,7 +31,9 @@ class ProjectsController < ApplicationController
 
 	  if @project.save
 	    redirect_to(action: 'index')
-	  else
+      flash[:notice] = "Project created sccessfully"
+    else
+      flash[:error] = "Please, check errors"
 	    render('new')
 	  end
 	end
